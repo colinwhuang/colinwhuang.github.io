@@ -50,16 +50,22 @@
 						<div class="inner">
 						<h1>Joiner Lab Optogenetics Project</h1>
 							<h2>(In Progress)</h2>
-							<h2>Optogenetics in Drosophila</h2>
-							<p>Joiner Lab conducts research on the molecular mechanisms and neural circuitry that control sleep need in fruit flies. Optogenetics is a fairly new biological technique that can control neurons through the expression of light-sensitive channels on these target neurons. The specificity of neural excitation through optogenetic techniques made optogenetics a viable option for the lab to utilize. With Dr. Joydeep De, a post-doctoral researcher at UCSD, I visited the Molecular Neurobiology Laboratory at Salk Institute for Biological Studies to examine and study their Drosophila optogenetics configuration. My role in this project is replicating the optogenetics setup from Salk Institute and to program the frequency at which the LED lights illuminate. However, the Metaphase LED controller that the Molecular Neurobiology Laboratory uses costs several hundred dollars. By using the Arduino, breadboard, and MOSFET, I was able to save my lab approximately $500-$600.</p>
-							<span class="image main"><img src="images/optconfig.png" alt="" /></span>
-							<h2>The Configuration</h2>
-							<p>For the optogenetics setup, I use an Arduino UNO, a 9V external power source, and LED strip lights. The purpose of the Arduino UNO is to control the interval of time between each period of light exposure. To provide the necessary current to light the LEDs, I utilize a 9V battery and MOSFETs (metal–oxide–semiconductor field-effect transistor) to amplify the signal. To control the frequency of the LEDs, I wrote a program utilizing Pulse Width Modulation to write “turn on” and “turn off” methods. Pulse Width Modulation also mitigates the issue of excessive light intensity by maintaining an intensity of 0.1 to 0.5 W/mm^2. 
+							<h2>The Optogenetics Device</h2>
+							<p>The purpose of the optogenetics device is to control the behavior of fruit flies through the expression of light-sensitive channels on target neurons. The device produces a certain frequency of light at a specific wavelength to activate these channels.</p>
+							<ul>
+								<li>Coded an Arduino UNO to control the intensity and frequency of a 620-625nm LED strip</li>
+								<li>Pulse Width Modulation was utilized to maintain a frequency of 10 Hz</li>
+								<li>MOSFET applied to the wiring to control the current flowing through the circuit</li>
+								<li>Currently experimenting with different resistors to determine a suitable intensity due to unexpected excitatory behavior in preliminary tests</li>
+							</ul>
 							<span class="image main"><img src="images/schematic.png" alt="" /></span>
 							<video controls width="250">
 							<source src="videos/optovid.mp4"
             						type="video/mp4">
 							</video>
+							<h2>The Joiner Lab</h2>
+							<p>Joiner Lab conducts research on the molecular mechanisms and neural circuitry that control sleep need in fruit flies. The specificity of neural excitation through optogenetic techniques made optogenetics a viable option for the lab to utilize. With Dr. Joydeep De, a post-doctoral researcher at UCSD, I visited the Molecular Neurobiology Laboratory at Salk Institute for Biological Studies to examine and study their Drosophila optogenetics configuration. My role in this project is replicating the optogenetics setup from Salk Institute and to program the frequency at which the LED lights illuminate. However, the Metaphase LED controller that the Molecular Neurobiology Laboratory uses costs several hundred dollars. By using the Arduino, breadboard, and MOSFET instead, I was able to save my lab approximately $500-$600.</p>
+							<span class="image main"><img src="images/optconfig.png" alt="" /></span>
 						</div>
 					</div>
 
